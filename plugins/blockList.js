@@ -7,7 +7,7 @@ ${blocked.map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join`\n`}
 └────`.trim(), m, { contextInfo: { mentionedJid: blocked } })
 }
 handler.help = ['blocklist']
-handler.tags = ['owner']
+handler.tags = ['info']
 handler.command = /^listbloc?k|bloc?klist|daftarbloc?k|blocks$/i
 handler.owner = true
 
