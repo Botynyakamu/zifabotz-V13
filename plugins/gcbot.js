@@ -1,1 +1,23 @@
-const _0x341c40=_0x3e7e;(function(_0x1edd9d,_0x2a29ec){const _0x12b738=_0x3e7e,_0x2505b0=_0x1edd9d();while(!![]){try{const _0x4b77dd=parseInt(_0x12b738(0x16b))/0x1+parseInt(_0x12b738(0x16f))/0x2*(parseInt(_0x12b738(0x177))/0x3)+-parseInt(_0x12b738(0x171))/0x4*(parseInt(_0x12b738(0x16d))/0x5)+-parseInt(_0x12b738(0x169))/0x6+parseInt(_0x12b738(0x16e))/0x7*(parseInt(_0x12b738(0x167))/0x8)+-parseInt(_0x12b738(0x172))/0x9+parseInt(_0x12b738(0x173))/0xa;if(_0x4b77dd===_0x2a29ec)break;else _0x2505b0['push'](_0x2505b0['shift']());}catch(_0x373b19){_0x2505b0['push'](_0x2505b0['shift']());}}}(_0x1a4a,0x9afe6));let handler=async(_0x4845b2,{conn:_0x3af556,usedPrefix:_0x1048a6})=>{const _0x42d66e=_0x3e7e;let _0x5f21df=_0x42d66e(0x16a),_0x57f872=global['botwm'],_0x77d737=_0x42d66e(0x174)[_0x42d66e(0x175)]();_0x3af556[_0x42d66e(0x176)](_0x4845b2['chat'],_0x77d737,''+_0x57f872,_0x42d66e(0x170),_0x42d66e(0x166),_0x4845b2);};function _0x1a4a(){const _0x24a2a3=['trim','sendButton','33rTjfog','.menu','4266888Cdjrjm','command','3853854BhmXHN','https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Group','507383sRzbrv','info','5SgkZIy','7LlEEXP','68674qWEOcr','⋮☰\x20Menu','10956cCNDhp','1699803BWRCYI','503180uLUmKW','\x0a\x0a╭═══════════════════════\x0a\x0a║╭──❉\x20〔\x20⳹\x20❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹\x20❋ཻུ۪۪\x20〕\x20❉──────\x20\x0a\x0a║│➸\x20*_GROUP\x20OFFC\x20ZIFABOTZ_*\x0a\x0a║│➸\x20\x20*https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*\x0a\x0a╰─────────❉\x0a\x0a▌│█║▌║▌║║▌║▌║█│▌\x0a\x0a⳹\x20❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹\x20❋ཻུ۪۪⸙\x20by.rozi\x0a\x0a'];_0x1a4a=function(){return _0x24a2a3;};return _0x1a4a();}function _0x3e7e(_0x57983d,_0x4946bd){const _0x1a4acb=_0x1a4a();return _0x3e7e=function(_0x3e7ef2,_0x5f25f2){_0x3e7ef2=_0x3e7ef2-0x166;let _0x1179c0=_0x1a4acb[_0x3e7ef2];return _0x1179c0;},_0x3e7e(_0x57983d,_0x4946bd);}handler['help']=['gcbot'],handler['tags']=[_0x341c40(0x16c)],handler[_0x341c40(0x168)]=/^gcbot$/i,module['exports']=handler;
+let fetch = require('node-fetch')
+let { MessageType } = require('@adiwajshing/baileys')
+let handler = async(m, { conn }) => {
+    let kontol = `
+*_📮:PILIH GRUB YANG KAMU MAU JOIN_*`.trim()
+  const button = {
+        buttonText: 'pilih group',
+        description: kontol,
+        sections:  [{title: "groub pilihan", rows: [
+        {title: '⋮☰group zifa1', description: "📣join kuy", rowId:".zifa1"},
+        {title: '⋮☰group zifa2', description: "📣join kuy", rowId:".zifa2"},
+        {title: '⋮☰group haori', description: "📣join kuy", rowId:".haori1"},
+        {title: '⋮☰group nekel', description: "📣join kuy", rowId:".nekel1"},
+       ] }],
+        listType: 1
+       }
+    conn.sendMessage(m.chat, button, MessageType.listMessage, { quoted: m })
+}
+
+handler.tags = ['main', 'update']
+handler.command = /^(gcbot)$/i
+handler.help = ['groupbot']
+module.exports = handler
