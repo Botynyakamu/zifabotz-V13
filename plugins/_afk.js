@@ -2,10 +2,14 @@ let handler = m => m
 handler.before = m => {
   let user = global.db.data.users[m.sender]
   if (user.afk > -1) {
-    conn.send2Button(m.chat, `
-Bukannya lu tadi AFK${user.afkReason ? ' setelah ' + user.afkReason : ''}
-Selama ${clockString(new Date - user.afk)}
-`.trim(), watermark, 'Menu', '.?', 'AFK lagi...', `.afk ${user.afkReason  ? user.afkReason : ''}`, m)
+    let test = `
+╭──[ *BERHENTI AFK !* ]──✧
+┆ *Alasan* : ${user.afkReason ? '' + user.afkReason : ''}
+┆ *Time* : ${clockString(new Date - user.afk)}
+╰┅────★
+`.trim()
+conn.sendButton(m.chat, test, wm, '⋮☰ MENU', '.menu2', m)
+conn.reply(test)
     user.afk = -1
     user.afkReason = ''
   }
@@ -16,16 +20,18 @@ Selama ${clockString(new Date - user.afk)}
     let afkTime = user.afk
     if (!afkTime || afkTime < 0) continue
     let reason = user.afkReason || ''
-    m.reply(`
-Jangan tag dia cok!
-Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
-Selama ${clockString(new Date - afkTime)}
-`.trim())
+    let str = `╭──[ *JANGAN TAG DIA!* ]──✧
+┆ ${reason ? '*Alasan* : ' + reason : 'Tanpa Alasan'}
+┆ *Time* : ${clockString(new Date - afkTime)}
+╰┅────
+`.trim()
+conn.sendButton(m.chat, str, `${wm}`,'Menu', '.menu',m)
+conn.reply(str)
   }
   return true
 }
 
-module.exports = handler 
+module.exports = handler
 
 function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
@@ -33,3 +39,5 @@ function clockString(ms) {
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0) ).join(':')
 }
+
+let wm = global.botwm
