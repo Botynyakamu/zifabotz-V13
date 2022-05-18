@@ -1142,7 +1142,7 @@ let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ?
         "productId": "4938174216214248",
         "title": "𝚃𝙰𝙼𝙿𝙸𝙻𝙰𝙽 𝙼𝙴𝙽𝚄 𝚉𝙸𝙵𝙰𝙱𝙾𝚃𝚉",
         "description": '\n' + wm + '\n' + str,
-        "retailerId": "Thanks For zifabotz !",
+        "retailerId": "Thanks For zifabotz. !",
         "url": "▌│█║▌║▌║║▌║▌║█│▌",
         "descriptionCount": "999999999",
         "productImageCount": "1",
