@@ -37,14 +37,14 @@
 > pkg install bash
 > pkg install ffmpeg
 > pkg install libwebp
-> git clone https://github.com/Botynyakamu/zifabotz-V5
-> cd zifabotz-V5
+> git clone https://github.com/Botynyakamu/zifabotz-V10
+> cd zifabotz-V10
 > npm i
 > node run.js
 # Untuk Sdcard (File Sudah Di Download)
 > cd /sdcard
-> cp -r zifabotz-V5 $HOME
-> cd zifabotz-V5
+> cp -r zifabotz-V10 $HOME
+> cd zifabotz-V10
 > npm i
 > node run.js
 ```
@@ -154,7 +154,7 @@ Heroku Buildpack
 
 ### Repo Stats 
 
-![github card](https://github-readme-stats.vercel.app/api/pin/?username=Botynyakamu&repo=zifabotz-V5&theme=dark)
+![github card](https://github-readme-stats.vercel.app/api/pin/?username=Botynyakamu&repo=zifabotz-V10&theme=dark)
 ![github card](https://github-readme-stats.vercel.app/api/pin/?username=Botynyakamu&repo=Rzy.botz-M1&theme=dark)
 
 # Hargai Kami Dengan Menambahkan Kredit ( Wm ) 
