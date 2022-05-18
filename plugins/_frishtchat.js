@@ -20,7 +20,7 @@ let tag = `@${m.sender.split('@')[0]}`
     if (db.data.settings.groupOnly) return
     let user = global.db.data.users[m.sender]
     let tks = `Saya adalah ZIFABOTZ salah satu Bot Whatsapp yang diciptakan oleh : ${ow}
-Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Verify"'} untuk ${user.registered ? 'melihat list command dari' : 'mendaftar sebelum menggunakan'} zifabotz.
+Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Menu"'} untuk ${user.registered ? 'melihat list command dari' : 'list menu di zifabotz'} zifabotz.
 
 *Official Bot By ${waofc}*
 *Powered By ${ow}*`
@@ -56,7 +56,7 @@ Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Verify"'} untuk ${user.re
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await this.sendMessage(m.chat, { "contentText": `${ucapan()} ${username} !`, "footerText": tksk,
 "buttons": [
-{buttonId: user.registered ? '.menu' : `.verify`, buttonText: {displayText: user.registered ? '⋮☰ Menu' : 'Verify'}, type: 1},
+{buttonId: user.registered ? '.menu' : `.menu`, buttonText: {displayText: user.registered ? '⋮☰ Menu' : 'menu'}, type: 1},
 {buttonId: '.owner', buttonText: {displayText: 'Owner'}, type: 1},
 {buttonId: '.rules', buttonText: {displayText: 'Rules'}, type: 1}
 ],
