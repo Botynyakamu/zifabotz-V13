@@ -2,19 +2,21 @@ let fetch = require('node-fetch')
 let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
     let kontol = `
-╭─────[ *STORE BOT* ]─────✧
-┴
-│ *STORE ZIFABOTZ*
-┬
-╰──────────···`.trim()
+♡   ❍ㅤ  ⎙ㅤ ⌲
+╭─[ *_STORE_* ]─✧
+╰─────···`.trim()
   const button = {
-        buttonText: '🛒STORE ZIFABOTZ🛒',
+        buttonText: 'STORE ZIFABOTZ',
         description: kontol,
         sections:  [{title: "STORE ZIFABOTZ", rows: [
-        {title: 'Menu utama', description: "Kembali ke Menu Utama", rowId:".?"},
+        {title: 'sewa zifabotz', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewazifabotz1"},
         {title: 'Sewa satbotsss', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewasat"},
         {title: 'Jasa run mursid', description: "jasa run bot", rowId:".runbotmursid"},
-        {title: 'RULES', description: "rules zifabotz", rowId:".rules"},
+        {title: 'Pasang iklan di bot', description: "jasa pemasang iklan di bot", rowId:".lucbot"},
+        {title: 'Jasa tutorial run replit', description: "tutorial replit", rowId:".replit2"},
+        {title: 'Jasa tutorial run heroku', description: "tutorial heroku", rowId:".horoku3"},
+        {title: 'KEMBALI KE HALAMAN UTAMA', description: "menampilkan menu", rowId:".menu"},
+        {title: 'RULES', description: "taati peraturan", rowId:".rules"},
        ] }],
         listType: 1
        }
@@ -23,5 +25,5 @@ let handler = async(m, { conn }) => {
 
 handler.tags = ['main', 'update']
 handler.command = /^(iklan|sponsor)$/i
-handler.help = ['rules']
+handler.help = ['iklan']
 module.exports = handler
