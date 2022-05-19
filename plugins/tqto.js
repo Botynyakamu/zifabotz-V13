@@ -8,8 +8,6 @@ BIG THANKS TO
 ║│➸ *_LAYANAN API_*
 ║│➸ *_ALYA_*
 ║│➸ *_BOTCAHX_*
-║│➸ *_ARYBOTZ_*
-║│➸ *_YANG SUDAH NGERAWAT BOT_*
   •BASE NURUTOMO
 ═════════════
 `.trim(), watermark, 'TERIMAKASIH👋', '.menu')
