@@ -545,7 +545,7 @@ let str = `♡   ❍ㅤ  ⎙ㅤ ⌲
 
 
   ⬣━〔Powered By Rozi〕━⬣
-© zifabotz`
+©️ zifabotz`
 let name = await conn.getName(m.sender)
 
 let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
@@ -558,7 +558,7 @@ let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ?
         "productImage": image,
         "productId": "4938174216214248",
         "title": "𝚃𝙰𝙼𝙿𝙸𝙻𝙰𝙽 𝙼𝙴𝙽𝚄 𝚉𝙸𝙵𝙰𝙱𝙾𝚃𝚉",
-        "description": '\n' + wm + '\n' + str,
+        "description": '\n' + watermark + '\n' + str,
         "retailerId": "Thanks For zifabotz !",
         "url": "▌│█║▌║▌║║▌║▌║█│▌",
         "descriptionCount": "999999999",
