@@ -236,9 +236,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
                                     "rowId": ".donasi"
                                 }, {
-                                    "title":      "|🖼️| ❯╾Daftar╼-",
-                                    "description": "Daftar diri anda di zifabotz",
-                                    "rowId": ".daftar"
+                                    "title":      "|⛔| ❯╾setelan group buka/tutup╼-",
+                                    "description": "setelan buka/tutup group",
+                                    "rowId": ".setelanbukatutupgroup"
                                 }, {
  "title":      "|🎲| ❯╾Setelan grub╼-",
                                     "description": "setelan grub",
