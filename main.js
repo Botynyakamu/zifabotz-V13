@@ -1,4 +1,4 @@
-// Jangan di ubah nanti error
+// Jangan di ubah nanti error!
 
 require('./config.js')
 const { WAConnection: _WAConnection } = require('@adiwajshing/baileys')
