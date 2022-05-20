@@ -44,7 +44,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                                         },{
                                     	"title": "SETELAN GROUP",
                                         "description": "menampilkan setelan group",
-                                        "rowId": ".settingsgrup"
+                                        "rowId": ".setelangrub"
                                         },{
                                     	"title": "OFF ANTIBADWORD",
                                         "description": "menonaktifkan fitur antibadword",
