@@ -6,7 +6,6 @@ let handler = async (m, { conn }) => {
 let str = `*───────[ BIODATA OWNER ]───────*
 *💌 Nama* : ROZI
 *🎨 Umur* : 15
-*🧮 Kelas* : 9
 *📈 Status* : Busy
 *───────[ SOSIAL MEDIA ]───────*
 *📷 instagran* : zalfapontianak
