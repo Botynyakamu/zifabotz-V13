@@ -1,29 +1,18 @@
-let handler  = async (m, { conn, usedPrefix: _p }) => {
 let fetch = require('node-fetch')
-let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=Source+code'
-let info = `╭═[ *SCRIPT* ]═────···
+let handler = async (m, { conn, text }) => {
+  let ext= `
+  Status : *_sc yg bot gunakan!!_* 
+
+╭═[ *SCRIPT* ]═────···
 ┴
 📮: https://github.com/Botynyakamu/zifabotz-V12
 ╭═[ [❗] Jangan diperjual belikan tanpa seizin pemilik sc ]═────···
 `.trim()
-await conn.send2Button(m.chat, info, `${botol}`, '⋮☰ Back', '.menu', 'Owner', '.owner', m)
-conn.reply(info)
+conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'SCRIPT')).buffer(), ext, '©zifabotz', 'MENU', '.menu', 'SC LAIN', '.sclain', m)
+
 }
-handler.help = ['sc']
-handler.tags = ['tutor']
-handler.command = /^(sc)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-handler.limit = false
+handler.customPrefix = /^(sclain|.sclain|scriptlain|.scriptlain)$/i
+handler.command = new RegExp
 
 module.exports = handler
-
-let botol = global.botwm
+let wm = global.botwm
