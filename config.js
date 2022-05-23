@@ -43,7 +43,6 @@ global.APIKeys = { // APIKey nya disini
 // Sticker WM
 global.packname = 'rozi'
 global.author = 'zifa'
-global.wm = '©zifabotz'
 
 global.wait = '▰▰▰▰▱▱▱▱▱▱ ʟᴏᴀᴅɪɴɢ...'
 global.eror = '「❗」Server LAGI ERROR COK!'
