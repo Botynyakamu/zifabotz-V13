@@ -4,7 +4,6 @@ let pp = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&s
 let info = `╭═[ *SCRIPT* ]═────···
 ┴
 📮: https://github.com/Botynyakamu/zifabotz-V12
-
 ╭═[ [❗] Jangan diperjual belikan tanpa seizin pemilik sc ]═────···
 `.trim()
 await conn.send2Button(m.chat, info, `${botol}`, '⋮☰ Back', '.menu', 'Owner', '.owner', m)
