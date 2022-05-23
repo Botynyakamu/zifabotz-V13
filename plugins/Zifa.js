@@ -11,7 +11,7 @@ let handler = async (m, { conn, text }) => {
 conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'SCRIPT')).buffer(), ext, '©zifabotz', 'MENU', '.menu', 'SC LAIN', '.sclain', m)
 
 }
-handler.customPrefix = /^(sclain|.sclain|scriptlain|.scriptlain)$/i
+handler.customPrefix = /^(sc|.sc|script|.script)$/i
 handler.command = new RegExp
 
 module.exports = handler
