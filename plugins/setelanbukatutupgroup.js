@@ -4,7 +4,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                         "title": `Hai Kak ${conn.getName(m.sender)}\n*setelan buka/tutup group*`,
                         "description": "\n\n*@zifabotz*",
                         "footerText": "jika ada bug atau erorr Jangan tanya saya,karna saya juga gak tau.",
-                        "buttonText": "*SETELAN GROUP*",
+                        "buttonText": "SETELAN GROUP",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
