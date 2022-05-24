@@ -23,7 +23,7 @@ contoh:
   );
   if (!res.ok) throw `${res.status} ${res.statusText}`;
   let json = await res.json();
-  if (json.image) await conn.sendFile(m.chat, json.image, "", `${json.fact}\n\n~fatur`, m);
+  if (json.image) await conn.sendFile(m.chat, json.image, "", `${json.fact}\n\n©zifabotz`, m);
   else throw json;
 };
 handler.help = ["animal"].map((v) => v + " <hewan>");
