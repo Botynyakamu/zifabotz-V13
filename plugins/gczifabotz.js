@@ -4,7 +4,7 @@ let botol = global.botwm
 let str = `
 *Group zifabotz1 📮: https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv*
 `.trim()
-conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
+conn.sendButton(m.chat, str, `© zifabotz`, `⋮☰ Menu`, `.menu`, m)
 }
 handler.help = ['zifa1']
 handler.tags = ['info']
