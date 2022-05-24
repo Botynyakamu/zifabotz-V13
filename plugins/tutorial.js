@@ -9,7 +9,7 @@ let handler = async(m, { conn }) => {
         description: kontol,
         sections:  [{title: "cara membuat bot", rows: [
         {title: 'tutorial replit', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorreplit"},
-        {title: 'tutotial heroku', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorheroku"},
+        {title: 'tutorial okteto', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorokteto"},
         {title: 'Script', description: "SC yang bot ini gunakan", rowId:".sc"},
         {title: 'Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
         {title: 'halaman menu', description: "halaman semula", rowId:".menu"},
