@@ -12,7 +12,7 @@ let handler  = async (m, { conn, text }) => {
   let content = await conn.cMod(m.chat, m, /bc|broadcast/i.test(text) ? text : text )
   for (let id of chats) /*conn.send2ButtonLoc*/conn.send2Button(id, `${text}`.trim(), `\n╭─[ *_ZIFABOTZ_* ]─✧
 ╰─────···\n${time}`, 'Owner', '.owner2', 'Menu', '.menu', /*'Donasi', '.ds'*/)
-  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
+  conn.reply(m.chat, `_Berhasil mengirim pesan broadcast ke ${chats.length} chat_`, m)
 }
 handler.help = ['broadcast', 'bcbutton', 'bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
