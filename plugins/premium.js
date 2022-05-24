@@ -31,7 +31,7 @@ _https://chat.whatsapp.com/I8Q4oJVw8buHhIgMH5iVAv_
 ▌│█║▌║▌║║▌║▌║█│▌
 ▌│█║▌║▌║║▌║▌║█│▌
 `.trim()
-conn.send2ButtonLoc(m.chat,await (await fetch(fla + 'Premium')).buffer(), info, `${botol}`, `Owner`, `.owner`, 'Payment','.payment', m)
+conn.send2ButtonLoc(m.chat,await (await fetch(fla + 'Premium')).buffer(), info, `©zifabotz`, `Owner`, `.owner`, 'Payment','.payment', m)
 } 
 handler.help = ['premium']
 handler.tags = ['info']
