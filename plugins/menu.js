@@ -416,7 +416,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 }, {
                                     "title": "|🖨️| Rules zifabotz",
                                     "description": "Mari menaati peraturan demi Kita bersama",
-                                    "rowId": ".rules"
+                                    "rowId": ".rules2"
                                 }, {
                                     "title": "|🙏| Thanks To",
                                     "description": "Terima kasih banyak untuk user yang telah berpartisipasi dalam bot",
