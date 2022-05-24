@@ -4,7 +4,7 @@ let botol = global.botwm
 let str = `
 *Group haori 📮: https://chat.whatsapp.com/ESeBcdKcHFm7BnyNiSZPvi*
 `.trim()
-conn.sendButton(m.chat, str, `watermark`, `⋮☰ Menu`, `.menu`, m)
+conn.sendButton(m.chat, str, `©zifabotz`, `⋮☰ Menu`, `.menu`, m)
 }
 handler.help = ['haori1']
 handler.tags = ['info']
