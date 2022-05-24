@@ -42,6 +42,6 @@ let handler = async(m, { conn }) => {
 }
 
 handler.tags = ['main', 'update']
-handler.command = /^(rules|rule)$/i
+handler.command = /^(rules|rule|snk)$/i
 handler.help = ['rules']
 module.exports = handler
