@@ -4,7 +4,7 @@ let botol = global.botwm
 let str = `
 *UDAH VAKUM MAIN TIKTOK!*
 `.trim()
-conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
+conn.sendButton(m.chat, str, `© zifabotz`, `⋮☰ Menu`, `.menu`, m)
 }
 handler.help = ['tiktok']
 handler.tags = ['info']
