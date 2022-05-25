@@ -4,7 +4,7 @@
 <p align="center">
     <a href="https://Botynyakamu.github.io">
         <img
-            src="https://readme-typing-svg.herokuapp.com?size=21&width=280&lines=PACKAGE+JGAN+GNTI+NANTI+ERROR+!"
+            src="https://readme-typing-svg.herokuapp.com?size=21&width=280&lines=package+jgn+gnti+nnti+error+!"
             alt="rzy-botz"
         />
     </a>
