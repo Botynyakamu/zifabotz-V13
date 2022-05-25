@@ -10,7 +10,7 @@ let str = `
 ▌│█║▌║▌║║▌║▌║█│▌
 ⳹ ❋ཻུ۪۪zifabotz⳹ ❋ཻུ۪۪⸙ by.rozi
 `.trim()
-conn.sendButton(m.chat, str, `${botol}`, `⋮☰ Menu`, `.menu`, m)
+conn.sendButton(m.chat, str, `© zifabotz`, `⋮☰ Menu`, `.menu`, m)
 }
 handler.help = ['github']
 handler.tags = ['info']
