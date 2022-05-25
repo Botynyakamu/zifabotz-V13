@@ -153,7 +153,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                                     }, {
                                          "title": `PROFILE`,
                                          "description": "Profile Anda!",
-                                         "rowId": '.pp'
+                                         "rowId": '.profile'
                        }],
                     "title": "zifabotz"
                   }
