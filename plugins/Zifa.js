@@ -1,11 +1,11 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
   let ext= `
-  Status : *_PRIVASI* 
+  Status : *_PRIVASI_* 
 
 ╭═[ *SCRIPT* ]═────···
 ┴
-📮: SC PRIVATE!!
+📮: *SC PRIVATE!!*
 *PEMILIK SC:* wa.me//6285828764046
 ╭═[ [❗] kalau mau beli sc silahkan chat pemilik sc aja ]═────···
 `.trim()
