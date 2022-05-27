@@ -169,7 +169,7 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
 handler.help = ['verify', 'daftar']
 handler.tags = ['xp']
 
-handler.command = /^(verify|daftar|reg(ister)?)$/i
+handler.command = /^(verify|button|daftar|reg(ister)?)$/i
 
 module.exports = handler
 let wm = global.botwm
