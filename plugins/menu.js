@@ -408,7 +408,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                 "rows": [{
                                     "title": "|👩‍💻| Owner ZIFABOTZ",
                                     "description": "pemilik ZIFABOTZ",
-                                    "rowId": ".owner"
+                                    "rowId": ".owner2"
                                 }, {
                                     "title": "|🛠|Status bot",
                                     "description": "Status dan informasi bot",
@@ -511,7 +511,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, '▁ ▂ ▄ ▅ ▆ ▇ █PEMILIK BOT', `${_p}owner`, '🐻TUTORIAL BUAT BOT🐻', `.tutorial`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(thumbfoto)).buffer(), text.trim(), watermark, '▁ ▂ ▄ ▅ ▆ ▇ █PEMILIK BOT', `.owner2`, '🐻TUTORIAL BUAT BOT🐻', `.tutorial`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
