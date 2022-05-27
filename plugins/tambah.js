@@ -13,7 +13,7 @@ const uploadImage = require('../lib/uploadImage')
      let url = await uploadImage(media) 
      json.push({name: t, desc: d, jual: n, img: url}) 
      fs.writeFileSync('./src/toko.json', JSON.stringify(json)) 
-     m.reply('Ok, sudah tersimpan.') 
+     m.reply('Ok, sudah tersimpan, silahkan ketik .produk untuk melihat produk anda.') 
  } 
  handler.command = /tambah$/i 
  handler.tags = ['main'] 
