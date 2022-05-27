@@ -1,14 +1,15 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
   let ext= `
-  Status : *_sc yg bot gunakan!!_* 
+  Status : *_PRIVASI* 
 
 ╭═[ *SCRIPT* ]═────···
 ┴
-📮: https://github.com/Botynyakamu/zifabotz-V13
-╭═[ [❗] Jangan diperjual belikan tanpa seizin pemilik sc ]═────···
+📮: SC PRIVATE!!
+*PEMILIK SC:* wa.me//6285828764046
+╭═[ [❗] kalau mau beli sc silahkan chat pemilik sc aja ]═────···
 `.trim()
-conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'SCRIPT')).buffer(), ext, '©zifabotz', 'MENU', '.menu', 'SC LAIN', '.sclain', m)
+conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'PRIVASI')).buffer(), ext, '©zifabotz', 'MENU', '.menu', 'SC LAIN', '.sclain', m)
 
 }
 handler.customPrefix = /^(sc|.sc|script|.script)$/i
