@@ -8,11 +8,11 @@ let handler = async(m, { conn }) => {
         buttonText: 'Klik Di sini',
         description: kontol,
         sections:  [{title: "cara membuat bot", rows: [
-        {title: 'tutorial replit', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorreplit"},
-        {title: 'tutorial okteto', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorokteto"},
-        {title: 'Script', description: "SC yang bot ini gunakan", rowId:".sc"},
-        {title: 'Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
-        {title: 'halaman menu', description: "halaman semula", rowId:".menu"},
+        {title: '🔖» tutorial replit', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorreplit"},
+        {title: '🔖» tutorial okteto', description: "tutorial? Cht nomor yg udah bot kirim", rowId:".tutorokteto"},
+        {title: '📮» Script', description: "SC yang bot ini gunakan", rowId:".sc"},
+        {title: '🏦» Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
+        {title: '🗃️» halaman menu', description: "halaman semula", rowId:".menu"},
        ] }],
         listType: 1
        }
@@ -20,6 +20,6 @@ let handler = async(m, { conn }) => {
 }
 
 handler.tags = ['main', 'update']
-handler.command = /^(tutorial|tutorialbuatbot)$/i
+handler.command = /^(tutorial|tutorialbuatbot|carabuatbot)$/i
 handler.help = ['tutorial']
 module.exports = handler
