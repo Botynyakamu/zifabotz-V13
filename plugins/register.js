@@ -15,15 +15,15 @@ let handler = async function (m, { text, usedPrefix, command }) {
           "sections": [
                             {
                                 "rows": [{
-                                         "title": `LIST MENU`,
+                                         "title": `📥LIST MENU`,
                                          "description": "List Menu zifabotz",
                                          "rowId": ".menu"
                                     }, {
-                                         "title": `MY OWNER`,
+                                         "title": `👤MY OWNER`,
                                          "description": "List Owner zifabotz", 
                                          "rowId": ".owner"
                                     }, {
-                                         "title": `UNREGISTER`,
+                                         "title": `📮UNREGISTER`,
                                          "description": "Daftar Ulang",
                                          "rowId": '.unreg ' + sn
                        }],
@@ -39,7 +39,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
   if (!Reg.test(text)) return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": '*── 「 NOT REGISTERED 」 ──*',
-          "description": `
+          "description": 'daftar yuk biar bisa liat fitur-fitu BOTNYA!',
 📮 Silahkan Pilih umur anda!`,
           "footerText": global.botdate,
           "buttonText": "VERIFY",
@@ -47,61 +47,61 @@ let handler = async function (m, { text, usedPrefix, command }) {
           "sections": [
                             {
                                 "rows": [{
-                                         "title": '27 Tahun',
+                                         "title": '🗃️27 Tahun',
                                          "rowId": '.daftar ' + namae + '.27'
                                     }, {
-                                         "title": '26 Tahun',
+                                         "title": '🗃️26 Tahun',
                                          "rowId": '.daftar ' + namae + '.26'
                                     }, {
-                                    	"title": '25 Tahun',
+                                    	"title": '🗃️25 Tahun',
                                          "rowId": '.daftar ' + namae + '.25'
                                     }, {
-                                    	"title": '24 Tahun',
+                                    	"title": '🗃️24 Tahun',
                                          "rowId": '.daftar ' + namae + '.24'
                                     }, {
-                                    	"title": '23 Tahun',
+                                    	"title": '🗃️23 Tahun',
                                          "rowId": '.daftar ' + namae + '.23'
                                     }, {
-                                    	"title": '22 Tahun',
+                                    	"title": '🗃️22 Tahun',
                                          "rowId": '.daftar ' + namae + '.22'
                                     }, {
-                                    	"title": '21 Tahun',
+                                    	"title": '🗃️21 Tahun',
                                          "rowId": '.daftar ' + namae + '.21'
                                     }, {
-                                    	"title": '20 Tahun',
+                                    	"title": '🗃️20 Tahun',
                                          "rowId": '.daftar ' + namae + '.20'
                                     }, {
-                                    	"title": '19 Tahun',
+                                    	"title": '🗃️19 Tahun',
                                          "rowId": '.daftar ' + namae + '.19'
                                     }, {
-                                    	"title": '18 Tahun',
+                                    	"title": '🗃️18 Tahun',
                                          "rowId": '.daftar ' + namae + '.18'
                                     }, {
-                                    	"title": '17 Tahun',
+                                    	"title": '🗃️17 Tahun',
                                          "rowId": '.daftar ' + namae + '.17'
                                     }, {
-                                    	"title": '16 Tahun',
+                                    	"title": '🗃️16 Tahun',
                                          "rowId": '.daftar ' + namae + '.16'
                                     }, {
-                                    	"title": '15 Tahun',
+                                    	"title": '🗃️15 Tahun',
                                          "rowId": '.daftar ' + namae + '.15'
                                     }, {
-                                    	"title": '14 Tahun',
+                                    	"title": '🗃️14 Tahun',
                                          "rowId": '.daftar ' + namae + '.14'
                                     }, {
-                                    	"title": '13 Tahun',
+                                    	"title": '🗃️13 Tahun',
                                          "rowId": '.daftar ' + namae + '.13'
                                     }, {
-                                    	"title": '12 Tahun',
+                                    	"title": '🗃️12 Tahun',
                                          "rowId": '.daftar ' + namae + '.12'
                                     }, {
-                                    	"title": '11 Tahun',
+                                    	"title": '🗃️11 Tahun',
                                          "rowId": '.daftar ' + namae + '.11'
                                     }, {
-                                    	"title": '10 Tahun',
+                                    	"title": '🗃️10 Tahun',
                                          "rowId": '.daftar ' + namae + '.10'
                                          }, {
-                                    	"title": '9 Tahun',
+                                    	"title": '🗃️9 Tahun',
                                          "rowId": '.daftar ' + namae + '.9'
                        }],
                     "title": "Silahkan Pilih Umur Anda!"
@@ -143,15 +143,15 @@ conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
           "sections": [
                             {
                                 "rows": [{
-                                         "title": `LIST MENU`,
+                                         "title": `📥LIST MENU`,
                                          "description": "List Menu zifabotz",
                                          "rowId": ".menu"
                                     }, {
-                                         "title": `CODE REGISTER`,
-                                         "description": "Bonus Pemula", 
-                                         "rowId": `.codereg ${pickRandom(['070698', '661528', '878588', '775636', '098786'])}`
+                                         "title": `🛒STORE`,
+                                         "description": "Liat store zifabotz", 
+                                         "rowId": ".iklan"
                                     }, {
-                                         "title": `PROFILE`,
+                                         "title": `🖼️PROFILE`,
                                          "description": "Profile Anda!",
                                          "rowId": '.profile'
                        }],
