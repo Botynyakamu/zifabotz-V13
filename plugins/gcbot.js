@@ -7,10 +7,10 @@ let handler = async(m, { conn }) => {
         buttonText: 'pilih group',
         description: kontol,
         sections:  [{title: "groub pilihan", rows: [
-        {title: '⋮☰group zifa1', description: "📣join kuy", rowId:".zifa1"},
-        {title: '⋮☰group zifa2', description: "📣join kuy", rowId:".zifa2"},
-        {title: '⋮☰group haori', description: "📣join kuy", rowId:".haori1"},
-        {title: '⋮☰group nekel', description: "📣join kuy", rowId:".nekel1"},
+        {title: '⋮☰group zifa1', description: "🗃️join kuy", rowId:".zifa1"},
+        {title: '⋮☰group zifa2', description: "🗃️join kuy", rowId:".zifa2"},
+        {title: '⋮☰group haori', description: "🗃️join kuy", rowId:".haori1"},
+        {title: '⋮☰group nekel', description: "🗃️join kuy", rowId:".nekel1"},
        ] }],
         listType: 1
        }
