@@ -403,8 +403,8 @@ module.exports = {
           if (chat.welcome) {
             let groupMetadata = await this.groupMetadata(jid)
             for (let user of participants) {
-              let kai = await(await fetch('https://telegra.ph/file/7924b4502e55af960e17d.jpg')).buffer()
-              let poi = await(await fetch('https://telegra.ph/file/3e5ab599e85f33e7a0e4f.jpg')).buffer()
+              let kai = await(await fetch('https://telegra.ph/file/7ae75cea769df77cde511.jpg')).buffer()
+              let poi = await(await fetch('https://telegra.ph/file/7ae75cea769df77cde511.jpg')).buffer()
               text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'ようこそ Youkuso, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
                   (chat.sBye || this.bye || conn.bye || '左様なら Sayounara, @user!')).replace(/@user/g, '@' + user.split`@`[0])
                 let wel = `━━━━━━ Welcome Beban ━━━━━━`
@@ -479,13 +479,13 @@ ketik *.on delete* untuk mematikan pesan ini
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: '*LU BUKAN OWNER GW COK🗿*',
-    owner: '*LU BUKAN OWNER GW COK🗿*',
-    premium: '*LU BUKAN MEMBER PREMIUM😑*',
-    group: '*CUMAN KHUSUS GRUB DOANG😐*',
-    private: '*CHAT PRIBADI AJA😑*',
-    admin: '*LU AJA BUKAN ADMIN🗿*',
-    botAdmin: '*BOT AJA BUKAN ADMIN😑*',
+    rowner: '*NGOTAK LAH BODOH KAU TU BUKAN OWNER🗿*',
+    owner: '*NGOTAK LAH BODOH KAU TU BUKAN OWNER🗿*',
+    premium: '*KAU YAK BUKAN MEMBER PREMIUM AWOKAWOAK, MAKANYA BELI PREMIUM JANGAN GRATISAN MULU*',
+    group: '*KAU TENGOKAN ITU KHUSUS GRUB? TROS GUNE KAU CHAT DI PRIBADI APE?:V*',
+    private: '*GUNE DI CHAT PRIBADI YAK!*',
+    admin: '*KAU BUKAN ADMIN JGAN SOK KERAS🗿*',
+    botAdmin: '*BOT DAH MASUK TAPI GAK ADMIN LAWACK LO MIN🗿*',
     unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n#daftar',
     nsfw: 'NSFW doesnt active.\nNSFW tidak aktif.'
   }[type]
