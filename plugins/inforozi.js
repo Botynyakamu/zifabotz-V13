@@ -76,17 +76,15 @@ let handler  = async (m, { conn, usedPrefix }) => {
 
 *ℒ⃝💻C O N N E C T  W I T H  M E*
 
-⛎ *Api:* http://api-alphabot.herokuapp.com
-♈ *Youtube:* https://bit.ly/AmmarExecuted
-♉ *Github:* https://github.com/Lord-Ammar
-♊ *Insragram:* http://instagram.com/lord_ammar_quoteser
+♉ *Github:* https://github.com/Botynyakamu
+♊ *Insragram:* http://instagram.com/zalfapontianak
 ♏ *Whatsapp:* wa.me/6287773973818
 
 
 
 
 `.trim()
-conn.sendButton(m.chat, str, `©zifabotz`, 'GROUP BOT', '.gcbot', m)
+conn.sendButton(m.chat, str, `©zifabotz`, '🏦GROUP BOT🏦', '.gcbot', m)
 
 }
 handler.help = ['info']
