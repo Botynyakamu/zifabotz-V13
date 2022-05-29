@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
 ╭═[ *SCRIPT* ]═────···
 ┴
 📮: *SC PRIVATE!!*
-*PEMILIK SC:* wa.me//6285828764046
+*PEMILIK SC:* wa.me/6287773973818
 ╭═[ [❗] kalau mau beli sc silahkan chat pemilik sc aja ]═────···
 `.trim()
 conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'PRIVASI')).buffer(), ext, '©zifabotz', 'MENU', '.menu', 'SC LAIN', '.sclain', m)
