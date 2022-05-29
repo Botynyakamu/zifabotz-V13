@@ -77,7 +77,7 @@ let handler  = async (m, { conn, usedPrefix }) => {
 *ℒ⃝💻C O N N E C T  W I T H  M E*
 
 ♉ *Github:* https://github.com/Botynyakamu
-♊ *Insragram:* http://instagram.com/zalfapontianak
+♊ *Insragram:* https://instagram.com/zalfapontianak
 ♏ *Whatsapp:* wa.me/6287773973818
 
 
