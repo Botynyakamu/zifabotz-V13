@@ -20,6 +20,6 @@ let handler = async(m, { conn }) => {
 }
 
 handler.tags = ['main', 'update']
-handler.command = /^(tutorial|tutorialbuatbot|carabuatbot)$/i
+handler.command = /^(tutorial|tutorialbuatbot|carabuatbot|cbb)$/i
 handler.help = ['tutorial']
 module.exports = handler
