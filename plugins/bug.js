@@ -6,7 +6,7 @@ let handler = async(m, { conn, text }) => {
     var nomor = m.sender
     const teks1 = `*[REPORT]*\nNomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${text}`
     conn.sendMessage('6287773973818@s.whatsapp.net', teks1, MessageType.text)
-    conn.reply(m.chat, '✔️Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.', m)
+    conn.reply(m.chat, '💬 report terkirim ke owner!! Jangan buat laporan palsu.', m)
 }
 handler.help = ['bug <laporan>', 'report <laporan>']
 handler.tags = ['info']
