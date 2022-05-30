@@ -5,7 +5,7 @@ let handler = async (m, { conn, text }) => {
 
 ╭═[ *SCRIPT* ]═────···
 ┴
-📮: *SC PRIVATE!!*
+📮: *SC-SC MULU! BUAT LAH JGAN GRTISAN MULU...*
 *PEMILIK SC:* wa.me/6287773973818
 ╭═[ [❗] kalau mau beli sc silahkan chat pemilik sc aja ]═────···
 `.trim()
