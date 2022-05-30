@@ -89,7 +89,7 @@ conn.sendButton(m.chat, str, `©zifabotz`, '🏦GROUP BOT🏦', '.gcbot', m)
 }
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = /^(info)$/i
+handler.command = /^(info|infobot)$/i
 
 handler.fail = null
 
