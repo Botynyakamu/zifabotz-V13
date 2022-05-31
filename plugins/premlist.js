@@ -5,6 +5,6 @@ let handler = async (m, { conn, isOwner }) => {
 }
 handler.help = ['premlist']
 handler.tags = ['owner']
-handler.command = /^(listprem|premlist)$/i
+handler.command = /^(listprem|premlist|listpremium)$/i
 
 module.exports = handler
