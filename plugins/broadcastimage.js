@@ -1,23 +1,37 @@
-let fs = require('fs')
-const fetch = require('node-fetch')
-
-let handler = async (m, { conn, text }) => {
-    let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-    let logo = fs.readFileSync('./src/IMG-20220401-WA0000.jpg')
-    let chats = conn.chats.all().filter(v => !v.read_only && v.message).map(v => v.jid)
-    conn.reply(m.chat, `_Send a broadcast message to ${chats.length} chats_\nestimation complete ${chats.length * 1.5} seconds`, m)
-    for (let id of chats) {
-        await delay(1500)
-        await conn.send2ButtonLoc(id, logo,'*——————「 Broadcast 」——————*\n' + text, watermark + `\n\n${time}`, '⋮☰ Menu', '.menu', 'Donasi', '.donasi2')
-    }
-    m.reply('_*Broadcast Finished*_')
+/*let handler  = async (m, { conn, text }) => {
+  let chats = conn.chats.all().filter(v => !v.read_only && v.message).map(v => v.jid)
+  let content = await conn.cMod(m.chat, m, /bc|broadcast/i.test(text) ? text : text + '\n' + readMore + '')
+  for (let id of chats) conn.copyNForward(id, content)
+  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
+}*/
+let fetch = require('node-fetch')
+let handler  = async (m, { conn, text }) => {
+  let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
+  let thumb = 'https://telegra.ph/file/bd00f3d3dc76cf16e31e8.jpg'
+  let chats = conn.chats.all().filter(v => !v.read_only && v.message).map(v => v.jid)
+  let content = await conn.cMod(m.chat, m, /bc|broadcast/i.test(text) ? text : text )
+  for (let id of chats) /*conn.send2ButtonLoc*/conn.send2Button(id, `${text}`.trim(), `\n_*ALL BROADCAST*_\n${time}`, '🗃️Owner', '.owner', '💬Menu', '.menu', /*'Donasi', '.donasi'*/)
+  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
 }
-handler.help = ['broadcastimage'].map(v => v + ' <teks>')
+handler.help = ['broadcastimage', 'bcimage', 'bci'].map(v => v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^(broadcastimage|bci)$/i
-
+handler.command = /^(broadcastimage|bcimage|bci)$/i
 handler.owner = true
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
 
 module.exports = handler
 
-const delay = time => new Promise(res => setTimeout(res, time))
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+//
+// B U A T - B U T T O N - A J A H
+//
