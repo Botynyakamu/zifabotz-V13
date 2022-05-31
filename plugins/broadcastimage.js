@@ -7,7 +7,7 @@
 let fetch = require('node-fetch')
 let handler  = async (m, { conn, text }) => {
   let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-  let thumb = 'https://telegra.ph/file/bd00f3d3dc76cf16e31e8.jpg'
+  let thumb = 'https://telegra.ph/file/bc07d9e137ba934d15038.jpg'
   let chats = conn.chats.all().filter(v => !v.read_only && v.message).map(v => v.jid)
   let content = await conn.cMod(m.chat, m, /bc|broadcast/i.test(text) ? text : text )
   for (let id of chats) /*conn.send2ButtonLoc*/conn.send2Button(id, `${text}`.trim(), `\n_*ALL BROADCAST*_\n${time}`, '🗃️Owner', '.owner', '💬Menu', '.menu', /*'Donasi', '.donasi'*/)
