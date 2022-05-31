@@ -17,6 +17,6 @@ let handler = async (m, { conn, args, isBotAdmin, isAdmin, isOwner }) => {
 }
 handler.help = ['ephe [on]']
 handler.tags = ['tools']
-handler.command = /^(ephe)$/i
+handler.command = /^(ephe|ephe)$/i
 
 module.exports = handler
