@@ -7,12 +7,12 @@ let handler  = async (m, { conn, text }) => {
     },
     message: {
     orderMessage: {
-    itemCount : 2022,
+    itemCount : 7282,
     status: 1,
     surface : 1,
-    message: `BROADCAST`, 
+    message: `Broadcast Zifabot,`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch(fla + 'bc')).buffer(), //Gambarnye
+    thumbnail: await (await fetch(fla + 'BZ')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -21,11 +21,11 @@ let handler  = async (m, { conn, text }) => {
   let content = (/bc|broadcast/i.test(text) ? text : text)
   for (let id of chats) conn.relayWAMessage(conn.prepareMessageFromContent(id, {
         "listMessage": {
-          "title": `──────❏ *ʙʀᴏᴀᴅᴄᴀsᴛ* ❏──────`.trim(),
+          "title": `──────❏ *Broadcast Zifabotz* ❏──────`.trim(),
           "description": content.trim(),
           "footerText": 
 global.botdate,
-          "buttonText": "*Tap!*",
+          "buttonText": "*🎐PILIHAN*",
           "listType": "SINGLE_SELECT",
           "sections": [
                             {
