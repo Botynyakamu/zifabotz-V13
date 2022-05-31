@@ -1,6 +1,6 @@
 let moment = require('moment-timezone')
 let fetch = require('node-fetch')
-let wm = global.waterwark
+let wm = global.watermark
 let handler = m => m
 
 handler.all = async function (m) {
