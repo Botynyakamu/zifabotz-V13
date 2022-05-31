@@ -24,5 +24,5 @@ let handler = async(m, { conn }) => {
 
 handler.tags = ['main', 'update']
 handler.command = /^(infoowner|biodata)$/i
-handler.help = ['.biodata']
+handler.help = ['biodata|infoowner']
 module.exports = handler
