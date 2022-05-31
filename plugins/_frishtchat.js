@@ -1,6 +1,6 @@
 let moment = require('moment-timezone')
 let fetch = require('node-fetch')
-let wm = global.botwm
+let wm = global.waterwark
 let handler = m => m
 
 handler.all = async function (m) {
@@ -19,8 +19,8 @@ let tag = `@${m.sender.split('@')[0]}`
     if (m.isGroup) return
     if (db.data.settings.groupOnly) return
     let user = global.db.data.users[m.sender]
-    let tks = `Saya adalah Yanzz BOT salah satu Bot Whatsapp yang diciptakan oleh : ${ow}
-Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Verify"'} untuk ${user.registered ? 'melihat list command dari' : 'mendaftar sebelum menggunakan'} Yanzz BOT.
+    let tks = `Saya adalah Zifabotz, BOT salah satu Bot Whatsapp yang diciptakan oleh : ${ow}
+Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Verify"'} untuk ${user.registered ? 'melihat list command dari' : 'mendaftar sebelum menggunakan'} Zifabotz.
 *Pembuat zifaBotz By ${waofc}*
 *Membatu zifaBotz By ${ow}*`
     const ftroli = {
@@ -82,16 +82,16 @@ function logos() {
   const lgs = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat dinihari"
   if (lgs >= 4) {
-    imp = 'https://telegra.ph/file/5a882b8558fd1d2bd03fa.jpg'
+    imp = 'https://telegra.ph/file/cb8cd970a20290e01a618.jpg'
   }
   if (lgs > 10) {
-    imp = 'https://telegra.ph/file/273ec3d04018c9b528c3e.jpg'
+    imp = 'https://telegra.ph/file/cb8cd970a20290e01a618.jpg'
   }
   if (lgs >= 15) {
-    imp = 'https://telegra.ph/file/88edbb01051b397574def.jpg'
+    imp = 'https://telegra.ph/file/cb8cd970a20290e01a618.jpg'
   }
   if (lgs >= 18) {
-    imp = 'https://telegra.ph/file/e6e6922ff0da8a598b9e0.jpg'
+    imp = 'https://telegra.ph/file/cb8cd970a20290e01a618.jpg'
   }
   return imp
 }
