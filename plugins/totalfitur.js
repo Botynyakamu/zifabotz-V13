@@ -1,10 +1,8 @@
-// RECODE ALYAAXZY
-
-let handler = async (m, { conn, args, command }) => {
-let totalf = Object.values(global.plugins).filter(
+let handler = async (m, { conn }) => {
+let totalfeatures = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
-conn.reply(m.chat, `*Total Fitur dari ZIFABOTZ saat ini*: ${totalf}`,m)
+conn.sendButton(m.chat, `_*total fitur: ${totalfeatures}*_`, '©️ zifabotz', 'Menu', '.menu', m) 
 }
 
 handler.help = ['totalfitur']
