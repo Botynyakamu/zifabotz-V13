@@ -1,18 +1,18 @@
 const fetch = require('node-fetch')
 
 let handler = async (m, { conn, text }) => {
-    let image = global.image
+    let logo = global.logo
     let chats = conn.chats.all().filter(v => !v.read_only && v.message).map(v => v.jid)
     conn.reply(m.chat, `_Send a broadcast message to ${chats.length} chats_\nestimation complete ${chats.length * 1.5} seconds`, m)
     for (let id of chats) {
         await delay(1500)
-        await conn.send2ButtonLoc(id, image,'*—「 Broadcast 」—*\n' + text, wm, '⋮☰ Menu', '.menu', 'Donasi', '.donasi')
+        await conn.send2ButtonLoc(id, logo,'*—「 Broadcast 」—*\n' + text, wm, '⋮☰ Menu', '.menu2', 'Donasi', '.donasi')
     }
     m.reply('_*Broadcast Finished*_')
 }
-handler.help = ['broadcastloc'].map(v => v + ' <teks>')
+handler.help = ['bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
-handler.command = /^(broadcastloc|bcloc)$/i
+handler.command = /^(broadcast|bc)$/i
 
 handler.owner = true
 
