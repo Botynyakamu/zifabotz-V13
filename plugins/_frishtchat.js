@@ -9,9 +9,9 @@ let username = conn.getName(who)
 let logo = await (await fetch(`${logos()}`)).buffer()
 let tag = `@${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
-    let pembantu = `@${'6285828764046'.split('@')[0]}`
+    let pembantu = `@${'6287773973818'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
- let ow = `@${'6287773973818'.split('@')[0]}`
+ let ow = `@${'6285828764046'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
     if (m.chat.endsWith('broadcast')) return
