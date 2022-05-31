@@ -52,7 +52,6 @@ global.image = 'https://telegra.ph/file/052ca138a613c8859756f.jpg' //change the 
 global.thumbfoto = 'https://telegra.ph/file/c3bcc6f8e8574d1c5274f.jpg'
 
 // image
-global.bcloc = 'https://telegra.ph/file/cb8cd970a20290e01a618.jpg'
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
 global.kolam = 'https://telegra.ph/file/5aa5dfa3394477e11fb18.jpg'
