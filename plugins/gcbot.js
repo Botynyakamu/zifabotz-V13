@@ -19,5 +19,5 @@ let handler = async(m, { conn }) => {
 
 handler.tags = ['main', 'update']
 handler.command = /^(gcbot)$/i
-handler.help = ['groupbot']
+handler.help = ['gcbot']
 module.exports = handler
