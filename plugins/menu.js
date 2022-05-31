@@ -236,23 +236,23 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
                                     "rowId": ".donasi"
                                 }, {
-                                    "title":      "|⛔| ❯╾setelan group buka/tutup╼-",
+                                    "title":      "|🔖| ❯╾setelan group buka/tutup╼-",
                                     "description": "setelan buka/tutup group",
                                     "rowId": ".setelanbukatutupgroup"
                                 }, {
- "title":      "|🎲| ❯╾Setelan grub╼-",
+ "title":      "|🗃️| ❯╾Setelan grub╼-",
                                     "description": "setelan grub",
                                     "rowId": ".setelangrub"
                                 }, {
-"title":      "|🛒| ❯╾Store Menu╼-",
+"title":      "|💬| ❯╾Store Menu╼-",
                                     "description": "store di zifabotz",
                                     "rowId": ".iklan"
                                 }, {
-  "title":  "|👩‍💻| ❯╾jadibot╼-",
+  "title":  "|📺| ❯╾jadibot╼-",
                                     "description": "bergabung bersama bot zifa",
                                     "rowId": ".jadibot"
                                 }, {
-  "title":  "|🙇‍♂️| ❯╾group╼-",
+  "title":  "|👥| ❯╾group╼-",
                                     "description": "bergabung di grub bersama bot zifa",
                                     "rowId": ".gcbot"
                                 }, {
