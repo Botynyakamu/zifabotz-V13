@@ -574,9 +574,9 @@ let fkon = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ?
     { quoted: fkon })
   conn.relayWAMessage(res)
 }
-handler.help = ['menu2']
+handler.help = ['menu|.?']
 handler.tags = ['info']
-handler.command = /^(menu2)$/
+handler.command = /^(menu)$/
 
 module.exports = handler
 
