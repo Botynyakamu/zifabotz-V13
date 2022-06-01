@@ -30,11 +30,11 @@ let handler = async(m, { conn }) => {
         buttonText: 'Klik Di sini',
         description: kontol,
         sections:  [{title: "Silahkan di pilih gausah pilih yang gaada", rows: [
-        {title: 'Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},
-        {title: 'Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewa"},
-        {title: 'Group Bot', description: "Official Group Bot zifabotz", rowId:".gcbot"},
-        {title: 'Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
-        {title: 'Owner', description: "Owner/Creator Bot", rowId:".owner"},
+        {title: '🗃️» Menu Utama', description: "Kembali ke Menu Utama", rowId:".?"},
+        {title: '📦» Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewa"},
+        {title: '👥» Group Bot', description: "Official Group Bot zifabotz", rowId:".gcbot"},
+        {title: '🏦» Donasi', description: "Donasi agar selalu online", rowId:".donasi"},
+        {title: '🌬️» Owner', description: "Owner/Creator Bot", rowId:".owner"},
        ] }],
         listType: 1
        }
@@ -42,6 +42,6 @@ let handler = async(m, { conn }) => {
 }
 
 handler.tags = ['main', 'update']
-handler.command = /^(rules|rule|snk)$/i
-handler.help = ['rules']
+handler.command = /^(rules2|rule2|snk2)$/i
+handler.help = ['rules2']
 module.exports = handler
