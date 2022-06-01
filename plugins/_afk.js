@@ -8,7 +8,7 @@ handler.before = m => {
 ┆ *Time* : ${clockString(new Date - user.afk)}
 ╰┅────★
 `.trim()
-conn.sendButton(m.chat, test, wm, '⋮☰ MENU', '.menu2', m)
+conn.sendButton(m.chat, test, watermark, '⋮☰ MENU', '.menu2', m)
 conn.reply(test)
     user.afk = -1
     user.afkReason = ''
