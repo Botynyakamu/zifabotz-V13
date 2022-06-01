@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
   Status : *_Online_* 
 *📮: HAI SAYA ZIFABOTZ SILAHKAN KLIK BUTTON DI BAWAH!*
 `.trim()
-conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'uy apaan')).buffer(), ext, 'bot online', 'COMMAND', '.command', 'OWNER', '.owner2', m)
+conn.send2ButtonLoc(m.chat, await (await fetch(fla + 'uy apaan')).buffer(), ext, 'bot online', 'COMMAND', '.menu2', 'OWNER', '.owner2', m)
 
 }
 handler.customPrefix = /^(zifa|zifabotz|zif|menu|hai|hallo|hii|hello|cuy)$/i
