@@ -19,7 +19,7 @@ let tag = `@${m.sender.split('@')[0]}`
     if (m.isGroup) return
     if (db.data.settings.groupOnly) return
     let user = global.db.data.users[m.sender]
-    let tks = `Saya adalah ZIFABOTZ salah satu Bot Whatsapp yang diciptakan oleh : ${ow}
+    let tks = `Saya adalah ZIFABOTZ salah satu Bot Whatsapp yang diciptakan oleh : ${waofc}
 Silahkan tekan Tombol ${user.registered ? '"Menu"' : '"Menu"'} untuk ${user.registered ? 'melihat list command dari' : 'list menu di zifabotz'} zifabotz.
 
 *Official Bot By ${waofc}*
